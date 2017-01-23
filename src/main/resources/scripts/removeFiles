@@ -1,0 +1,24 @@
+#!/bin/bash
+file="/opt/Dockerfile"
+
+if [ -f $file ] ; then
+    rm $file
+fi
+
+file="/opt/start_up.sh"
+
+if [ -f $file ] ; then
+    rm $file
+fi
+
+file="/opt/test.yml"
+
+if [ -f $file ] ; then
+    rm $file
+fi
+
+file="/opt/DEVOPSProject-2.jar"
+
+if [ -f $file ] ; then
+    rm $file
+fi
