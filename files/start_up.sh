@@ -1,0 +1,1 @@
+java -jar DEVOPSProject-1.jar server test.yml
