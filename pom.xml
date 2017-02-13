@@ -8,7 +8,7 @@
 	<artifactId>DEVOPSProject</artifactId>
 	<name>DEVOPSProject</name>
 	<description>DEVOPSProject REST service</description>
-	<version>2</version>
+	<version>1</version>
 
 	<build>
 		<plugins>
@@ -20,6 +20,14 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
+		  <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-jar-plugin</artifactId>
+	        <version>2.3.1</version>
+	        <configuration>
+	          <outputDirectory>files</outputDirectory>
+	        </configuration>
+	      </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
@@ -55,16 +63,6 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.5.3</version>
-				<configuration>
-					<descriptors>
-						<descriptor>src/main/resources/testApp.xml</descriptor>
-					</descriptors>
-					<tarLongFileMode>posix</tarLongFileMode>
-				</configuration>
 			</plugin>
 		</plugins>
 		

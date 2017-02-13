@@ -17,7 +17,7 @@ if [ -f $file ] ; then
     rm $file
 fi
 
-file="/opt/DEVOPSProject-2.jar"
+file="/opt/DEVOPSProject-1.jar"
 
 if [ -f $file ] ; then
     rm $file
