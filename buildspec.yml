@@ -12,6 +12,5 @@ phases:
 artifacts:
   discard-paths: yes
   files:
-    - target/DEVOPSProject-1-1.zip
-	- files/*
-  base-directory: files
+- target/DEVOPSProject-1.jar
+
