@@ -11,6 +11,8 @@ phases:
       - mvn clean install
 artifacts:
   files:
-    - scripts/*,files/*,appspec.yml
+    - scripts/*
+	- files/*
+	- appspec.yml
   
 
