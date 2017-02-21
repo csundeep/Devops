@@ -11,8 +11,7 @@ phases:
       - mvn clean install
 artifacts:
   files:
-    - target/DEVOPSProject-1.jar
-  base-directory: 'files'
+    - files/*
   discard-paths: yes
   
 
