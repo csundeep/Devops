@@ -10,7 +10,7 @@ phases:
       - echo Build completed on `date`
       - mvn clean install
 artifacts:
-  discard-paths: yes
   files:
-- target/DEVOPSProject-1.jar
+    - target/DEVOPSProject-1.jar
+  discard-paths: yes
 
