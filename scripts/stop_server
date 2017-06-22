@@ -1,3 +1,3 @@
 #!/bin/bash
-sudo docker stop $(sudo docker ps -q --filter ancestor=testdocker) || true
+sudo docker stop testdocker || true
 sudo docker rmi -f testdocker || true

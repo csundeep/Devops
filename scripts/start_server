@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /opt/
 sudo docker build -t  testdocker .
-sudo docker run -d -p 8888:8888 testdocker
+sudo docker name="testdocker" run -d -p 8888:8888 testdocker
