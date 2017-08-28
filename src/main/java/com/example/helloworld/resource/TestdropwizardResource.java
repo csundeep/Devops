@@ -16,7 +16,7 @@ public class TestdropwizardResource {
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String sayPlainTextHello(@QueryParam("name") String name) {
-		return "Hello, how are you " + name;
+		return "Hello, How are you " + name;
 	}
 
 }
