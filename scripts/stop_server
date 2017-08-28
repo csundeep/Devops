@@ -1,1 +1,6 @@
 #!/bin/bash
+if [ "$(docker ps -q -f name=testdocker)" ]; then
+	docker stop testdocker	
+    docker rm -f testdocker
+	docker rmi -f testdocker
+fi
