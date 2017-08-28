@@ -1,4 +1,8 @@
 #!/bin/bash
 
-docker rm -f testDocker || true
-# sudo docker rmi -f testdocker
+if [ ! "$(docker ps -q -f name=testdocker)" ]; then
+        # cleanup
+	docker stop testdocker	
+        docker rm -f testdocker
+	docker rmi -f testdocker
+fi

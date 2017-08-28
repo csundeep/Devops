@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /opt/
-sudo docker build -t  testdocker .
-sudo docker run -d --name testDocker -p 8888:8888 testdocker
+docker build -t  testdocker .
+docker run -d --name testdocker -p 9000:9000 testdocker
