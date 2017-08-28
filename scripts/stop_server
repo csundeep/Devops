@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "Hello"
 if [ "$(docker ps -q -f name=testdocker)" ]; then
 	docker stop testdocker	
     docker rm -f testdocker
