@@ -1,2 +1,4 @@
 #!/bin/bash
-docker stop testdocker || true && docker rm testdocker || true
+
+docker rm -f testDocker || true
+# sudo docker rmi -f testdocker
